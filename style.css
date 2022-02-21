@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap');
+
+* {
+    /* margin : 0; */
+    /* padding :0; */
+    box-sizing : border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+ --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+ --Light-Grayish-Blue: hsl(233, 11%, 84%);
+ --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+ --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+ /* ### Dark Theme */
+
+ --Very-Dark-Blue: hsl(235, 21%, 11%);
+ --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+ --Light-Grayish-Blue: hsl(234, 39%, 85%);
+ --Light-Grayish-Blue: hsl(236, 33%, 92%);
+ --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+ --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+ --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+html {
+    overflow-y : hidden;
+    overflow  : hidden;
+    overflow-x : hidden;
+}
+
+body {
+    height : 100vh;
+    width : 100vw;
+    display : flex;
+    justify-content : center;
+    background : url('images/bg-mobile-dark.jpg') no-repeat;
+    background : url('images/bg-mobile-dark.jpg'), linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    background-size : 100vw 25vh;
+    /* background-color : var(--Very-dark-blue); */
+    background-color : hsl(234, 24%, 15%);
+}
+
+.container {
+    z-index : 44;
+    margin-top : 2.5rem;
+    display : flex;
+    flex-direction : column;
+}
+
+.logo-wrapper {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    /* background : red; */
+    padding : 0 5px;
+}
+.logo {
+    font-size : 2rem;
+    font-weight : bolder;
+    color : white;
+    letter-spacing : 10px;
+}
+.logo-wrapper i {
+    font-size : 1.5rem;
+    color : white;
+    /* font-weight : lighter; */
+    cursor : pointer;
+    transition : all .5s ease;
+   
+}
+.logo-wrapper i.active {
+    color : black;
+}
+
+.input-wrapper {
+    display : flex;
+    /* justify-content : space-around; */
+    background : var(--Very-Light-Gray);
+    padding : .8rem .8rem;
+    border-radius : 5px;
+}
+.first {
+    border : 2px solid rgb(175, 174, 174);
+    border-radius : 50%;
+    margin-right : 5px;
+    padding : 2px 5px;
+   background : linear-gradient(to left, rgb(223, 69, 243), rgb(75, 78, 241));
+   cursor : pointer;
+   transition : all .3s ease;
+}
+.first i {
+    font-size : .8rem;
+    color : white;
+}
+.input-wrapper input {
+    outline : none;
+    border : none;
+    width : 100%;
+    margin-left : .4rem;
+    /* background : black; */
+    padding : 6px 5px;
+    border-radius : 5px;
+    color : rgb(150, 145, 145);
+}
+
+.notes-wrapper {
+    margin-top : 2.5rem;
+    background : rgb(24, 21, 43);
+    box-shadow : 2px 2px 15px 5px rgba(12, 12, 12, 0.493);
+    border-radius : 10px;
+    width : auto;
+    /* padding : 1rem 1rem; */
+}
+.notes-card {
+    display : flex;
+    /* justify-content : center; */
+    align-items : center;
+    /* background : #ccc; */
+    padding-left : 1rem;
+    padding-right : 1rem;
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+    border-bottom : 1.5px solid rgba(223, 222, 222, 0.37);
+}
+.circle {
+    border : 2px solid rgb(185, 181, 181);
+    border-radius : 50%;
+    padding : 2px 4px;
+    margin-right : 7px;
+    background : linear-gradient(to left, rgb(223, 69, 243), rgb(75, 78, 241));
+    cursor : pointer;
+}
+.circle i {
+    font-size : .8rem;
+    color : white;
+}
+
+.note {
+    font-size : 1rem;
+    color : rgb(114, 107, 107);
+    font-weight : 400;
+    word-wrap : break-word;
+}
+
+.notes-card .fa-times {
+    font-size : 1.2rem;
+    color : rgb(148, 143, 143);
+    font-weight : light;
+    margin-left : 4rem;
+    cursor : pointer;
+}
+
+.items-list {
+    display : flex;
+    justify-content : space-between;
+    padding-right : 10px;
+    padding-left : 10px;
+    color : var(--Very-Dark-Grayish-Blue);
+    font-size : .9rem;
+    margin-top : 1rem;
+}
+.items {
+    cursor : pointer;
+}
+.clear-text {
+    cursor : pointer;
+}
+
+.list-wrapper {
+    display : flex;
+    margin-top : .8rem;
+    margin-bottom : 1rem;
+}
+.filter-list {
+    display : flex;
+    justify-content : space-around;
+    list-style : none;
+}
+.list-item {
+    margin : 0 15px;
+}
+.list-link {
+    text-decoration : none;
+    color : var(--Very-Dark-Grayish-Blue);
+    transition : all .3s ease-in;
+}
+.list-link:hover {
+    color :hsl(247, 45%, 30%);
+}
+
+
+@media screen and (min-width : 800px) {
+    body {
+        background : url('images/bg-desktop-dark.jpg') no-repeat;
+        background-size : 100vw 40vh;
+        background : url('images/bg-desktop-dark.jpg'), linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+        background-color : hsl(234, 24%, 15%);
+    }
+}
