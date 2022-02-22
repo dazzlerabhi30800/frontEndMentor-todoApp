@@ -26,8 +26,8 @@
 }
 
 html {
-    overflow-y : hidden;
-    overflow  : hidden;
+    /* overflow-y : hidden;
+    overflow  : hidden; */
     overflow-x : hidden;
 }
 
@@ -87,14 +87,18 @@ body {
     border-radius : 50%;
     margin-right : 5px;
     padding : 2px 5px;
-   background : linear-gradient(to left, rgb(223, 69, 243), rgb(75, 78, 241));
-   cursor : pointer;
-   transition : all .3s ease;
+    cursor : pointer;
+    transition : all .6s ease;
+    background : linear-gradient(to left, rgb(223, 69, 243), rgb(75, 78, 241));   
 }
+
 .first i {
     font-size : .8rem;
     color : white;
+    transition : all .5s ease;
+    opacity : 1;
 }
+
 .input-wrapper input {
     outline : none;
     border : none;
@@ -119,23 +123,45 @@ body {
     /* justify-content : center; */
     align-items : center;
     /* background : #ccc; */
-    padding-left : 1rem;
-    padding-right : 1rem;
-    padding-top : 1rem;
-    padding-bottom : 1rem;
+    padding : 1.5rem 1.5rem 1.5rem 3.5rem;
     border-bottom : 1.5px solid rgba(223, 222, 222, 0.37);
+    
 }
+
+.text-wrapper {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    /* background : red; */
+    padding-left : .4rem;
+    padding-right : .5rem;
+    cursor : pointer;
+}
+.text-wrapper .circle {
+    padding : 3px 5px;
+}
+
 .circle {
     border : 2px solid rgb(185, 181, 181);
     border-radius : 50%;
     padding : 2px 4px;
     margin-right : 7px;
-    background : linear-gradient(to left, rgb(223, 69, 243), rgb(75, 78, 241));
     cursor : pointer;
+    background : transparent;
+    transition : all .4s ease-in;
+    
+}
+.circle.active{
+    background : linear-gradient(to left, rgb(223, 69, 243), rgb(75, 78, 241));   
 }
 .circle i {
     font-size : .8rem;
     color : white;
+    opacity : 0;
+    transition : all .3s ease-in;
+}
+.circle i.active {
+    opacity : 1;
 }
 
 .note {
@@ -143,6 +169,13 @@ body {
     color : rgb(114, 107, 107);
     font-weight : 400;
     word-wrap : break-word;
+    margin-left : 1rem;
+    text-decoration : none;
+    transition : all .5s ease-in;
+}
+.note.active {
+    text-decoration : line-through;
+
 }
 
 .notes-card .fa-times {
@@ -151,6 +184,10 @@ body {
     font-weight : light;
     margin-left : 4rem;
     cursor : pointer;
+    transition : all .4s ease-in;
+}
+.notes-card .fa-times:hover {
+    color : rgb(192, 75, 238);
 }
 
 .items-list {
@@ -173,6 +210,7 @@ body {
     display : flex;
     margin-top : .8rem;
     margin-bottom : 1rem;
+    justify-content : center;
 }
 .filter-list {
     display : flex;
@@ -188,7 +226,10 @@ body {
     transition : all .3s ease-in;
 }
 .list-link:hover {
-    color :hsl(247, 45%, 30%);
+    color :hsl(247, 73%, 61%);
+}
+.list-link.active {
+    color :hsl(247, 73%, 61%);
 }
 
 

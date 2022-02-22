@@ -24,46 +24,66 @@
        <i class="fas fa-moon"></i>
      </div>
    </div>
-   <div class="input-wrapper">
-     <div class="circle first"><i class="fas fa-check"></i></div>
-     <input type="text" placeholder="Create a new todo">
+   <form class="input-wrapper">
+     <button type="submit" id="todo" class="first"><i class="fas fa-check"></i></button>
+     <input class="input-text" type="text" placeholder="Create a new todo">
      <!-- <button type="submit">Take note</button> -->
-   </div>
+   </form>
    <div class="notes-wrapper">
-     <div class="notes-card">
-       <div class="circle"><i class="fas fa-check"></i></div>
-       <h2 class="note">Complete the javascript course</h2>
+     <div id="notes-list" >
+      <!-- <div class="notes-card">
+        <div class="text-wrapper">
+          <div class="circle"><i class="fas fa-check"></i></div>
+          <h2 class="note">Complete the javascript course</h2>
+         </div>
+        <i class="fas fa-times"></i>
+      </div> -->
+     </div>
+     <!-- <div class="notes-card">
+       <div class="text-wrapper">
+         <div class="circle"><i class="fas fa-check"></i></div>
+         <h2 class="note">Complete the javascript course</h2>
+        </div>
        <i class="fas fa-times"></i>
      </div>
      <div class="notes-card">
-       <div class="circle"><i class="fas fa-check"></i></div>
-       <h2 class="note">Complete the javascript course</h2>
+      <div class="text-wrapper">
+        <div class="circle"><i class="fas fa-check"></i></div>
+        <h2 class="note">Complete the javascript course</h2>
+       </div>
        <i class="fas fa-times"></i>
      </div>
      <div class="notes-card">
-       <div class="circle"><i class="fas fa-check"></i></div>
-       <h2 class="note">Complete the javascript course</h2>
+      <div class="text-wrapper">
+        <div class="circle"><i class="fas fa-check"></i></div>
+        <h2 class="note">Complete the javascript course</h2>
+       </div>
        <i class="fas fa-times"></i>
      </div>
      <div class="notes-card">
-       <div class="circle"><i class="fas fa-check"></i></div>
-       <h2 class="note">Complete the javascript course</h2>
+      <div class="text-wrapper">
+        <div class="circle"><i class="fas fa-check"></i></div>
+        <h2 class="note">Complete the javascript course</h2>
+       </div>
        <i class="fas fa-times"></i>
-     </div>
-     <div class="notes-card">
-       <div class="circle"><i class="fas fa-check"></i></div>
-       <h2 class="note">Complete the javascript course</h2>
+     </div> -->
+     <!-- <div class="notes-card">
+      <div class="text-wrapper">
+        <div class="circle"><i class="fas fa-check"></i></div>
+        <h2 class="note">Complete the javascript course</h2>
+       </div>
        <i class="fas fa-times"></i>
-     </div>
+     </div> -->
+    
     <div class="items-list">
-      <p class="items"><span>5</span> items left</p>
+      <p class="items"><span>0</span> items left</p>
       <p class="clear-text">Clear Completed</p>
     </div>
     <div class="list-wrapper">
       <ul class="filter-list">
-        <li class="list-item"><a href="#!" class="list-link">All</a></li>
-        <li class="list-item"><a href="#!" class="list-link">Active</a></li>
-        <li class="list-item"><a href="#!" class="list-link">Completed</a></li>
+        <li class="list-item" value="all"><a href="#"  class="list-link one">All</a></li>
+        <li class="list-item" value="uncompleted"><a href="#" class="list-link two">Uncompleted</a></li>
+        <li class="list-item" value="completed"><a href="#" class="list-link three">Completed</a></li>
       </ul>
     </div>
    </div>
